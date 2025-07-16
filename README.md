@@ -11,7 +11,7 @@ It uses a Convolutional Neural Network (CNN) with optional Spatial Attention to 
 
 - Features
   
- 1)Keyframe extraction using I-frames via PyAV
+1)Keyframe extraction using I-frames via PyAV
 
 2) Frame-by-frame classification using a CNN model
 
