@@ -10,6 +10,7 @@ Violent
 It uses a Convolutional Neural Network (CNN) with optional Spatial Attention to analyze keyframes extracted from a video. It supports both offline video uploads and real-time screen monitoring, built using a Streamlit interface.
 
 - Features
+  
  1)Keyframe extraction using I-frames via PyAV
 
 2) Frame-by-frame classification using a CNN model
