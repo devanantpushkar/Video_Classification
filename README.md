@@ -5,13 +5,21 @@ A deep learning-based system for classifying video content into three categories
 **Table of Contents:**
 
 Features
+
 Dataset
+
 Approach
+
 Model Training
+
 Model Architecture
+
 Accuracy
+
 Technologies Used
+
 How to Run
+
 Future Improvements
 
 **Features**
