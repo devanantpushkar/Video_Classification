@@ -1,7 +1,9 @@
 **Video Classification using CNN with Attention**
+
 A deep learning-based system for classifying video content into three categories: General, Obscene, and Violent, using Convolutional Neural Networks (CNN) with optional Spatial Attention. Built with TensorFlow + Keras and deployed with a user-friendly Streamlit interface. Supports both video uploads and real-time screen monitoring.
 
 **Table of Contents:**
+
 Features
 Dataset
 Approach
@@ -13,6 +15,7 @@ How to Run
 Future Improvements
 
 **Features**
+
 Keyframe Extraction using PyAV (I-frames)
 Frame-by-Frame Classification using CNN
 Spatial Attention Layer for focused learning
@@ -22,6 +25,7 @@ Real-time Screen Monitoring
 Aggregated Prediction using Averaging + Threshold Voting
 
 **Dataset**
+
 Total Labeled Keyframes: ~2,500 images
 Classes: General, Obscene, Violent
 Split:
@@ -30,6 +34,7 @@ Split:
 Source: Frames manually labeled from various public videos
 
 **Approach**
+
 Frame Extraction:
 Use either fixed rate (1 frame/sec) or keyframe extraction (I-frames using PyAV).
 
@@ -50,6 +55,7 @@ If majority frames show high probability for Obscene or Violent, raise alert
 Otherwise, label as General
 
 **Model Training**
+
 Frameworks: TensorFlow + Keras
 
 Preprocessing:
@@ -64,23 +70,26 @@ Epochs: 10 with early stopping
 Regularization: Dropout(0.5)
 
 **Model Architecture**
+
 Conv2D(32, kernel_size=(3, 3), activation='relu')
 MaxPooling2D(pool_size=(2, 2))
 Conv2D(64, kernel_size=(3, 3), activation='relu')
 MaxPooling2D(pool_size=(2, 2))
-# Optional: Spatial Attention Layer
+#  Spatial Attention Layer
 Flatten()
 Dense(128, activation='relu')
 Dropout(0.5)
 Dense(3, activation='softmax')
 
 **Accuracy**
+
 Training Accuracy: ~85%
 Validation Accuracy: ~80%
 
 Metrics Used: Accuracy, Precision, Recall, F1-Score
 
 **Technologies Used**
+
 TensorFlow/Keras: Deep learning model training
 OpenCV: Frame extraction and image processing
 PyAV: Keyframe extraction (I-frames)
@@ -88,6 +97,7 @@ MSS: Screen capture for real-time input
 Streamlit: Web-based frontend for user interaction
 
 **Future Improvements**
+
 Switch to Vision Transformer (ViT) for better global attention
 Try ResNet50 as backbone for deeper feature extraction
 Use 3D CNN or LSTM for motion-aware prediction
