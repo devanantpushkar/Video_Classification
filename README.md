@@ -1,8 +1,12 @@
 **Video Classification using CNN with Attention**
 
+---
+
 A deep learning-based system for classifying video content into three categories: General, Obscene, and Violent, using Convolutional Neural Networks (CNN) with optional Spatial Attention. Built with TensorFlow + Keras and deployed with a user-friendly Streamlit interface. Supports both video uploads and real-time screen monitoring.
 
 **Table of Contents:**
+
+---
 
 Features
 
@@ -22,7 +26,11 @@ How to Run
 
 Future Improvements
 
+---
+
 **Features**
+
+---
 
 Keyframe Extraction using PyAV (I-frames)
 
@@ -40,6 +48,8 @@ Aggregated Prediction using Averaging + Threshold Voting
 
 **Dataset**
 
+---
+
 Total Labeled Keyframes: ~2,500 images
 
 Classes: General, Obscene, Violent
@@ -53,6 +63,8 @@ Split:
 Source: Frames manually labeled from various public videos
 
 **Approach**
+
+---
 
 Frame Extraction:
 
@@ -83,6 +95,8 @@ Otherwise, label as General
 
 **Model Training**
 
+---
+
 Frameworks: TensorFlow + Keras
 
 Preprocessing:
@@ -103,7 +117,11 @@ Epochs: 10 with early stopping
 
 Regularization: Dropout(0.5)
 
+---
+
 **Model Architecture**
+
+```python
 
 Conv2D(32, kernel_size=(3, 3), activation='relu')
 
@@ -122,6 +140,10 @@ Dropout(0.5)
 
 Dense(3, activation='softmax')
 
+```
+
+---
+
 **Accuracy**
 
 Training Accuracy: ~85%
@@ -129,6 +151,8 @@ Training Accuracy: ~85%
 Validation Accuracy: ~80%
 
 Metrics Used: Accuracy, Precision, Recall, F1-Score
+
+---
 
 **Technologies Used**
 
@@ -141,6 +165,8 @@ PyAV: Keyframe extraction (I-frames)
 MSS: Screen capture for real-time input
 
 Streamlit: Web-based frontend for user interaction
+
+---
 
 **Future Improvements**
 
