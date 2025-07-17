@@ -131,3 +131,41 @@ MSS: Screen capture for real-time input
 
 Streamlit: Web-based frontend for user interaction
 
+🖥️ How to Run
+Clone the repository
+
+bash
+Copy
+Edit
+git clone https://github.com/devanantpushkar/Video_Classification.git
+cd Video_Classification
+Install dependencies
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Run the Streamlit app
+For video uploads:
+
+bash
+Copy
+Edit
+streamlit run app.py
+For real-time screen reader:
+
+bash
+Copy
+Edit
+streamlit run screen_reader_app.py
+🔮 Future Improvements
+Switch to Vision Transformer (ViT) for better global attention
+
+Try ResNet50 as backbone for deeper feature extraction
+
+Use 3D CNN or LSTM for motion-aware prediction
+
+Combine audio analysis for multi-modal classification
+
+Deploy with FastAPI and database logging
+
