@@ -1,4 +1,4 @@
-**Video Classification using CNN with Attention**
+## Video Classification using CNN with Attention
 
 ---
 
