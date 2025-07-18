@@ -168,6 +168,36 @@ Streamlit: Web-based frontend for user interaction
 
 ---
 
+How to Run
+
+---
+
+Clone the repository:
+
+```python
+git clone https://github.com/devanantpushkar/Video_Classification.git
+cd Video_Classification
+
+```
+Install dependencies:
+
+```python
+pip install -r requirements.txt
+Run the Streamlit app
+
+```
+
+For video uploads:
+```python
+streamlit run app.py
+
+```
+
+For real-time screen reader:
+```python
+streamlit run screen_reader_app.py
+```
+
 **Future Improvements**
 
 Switch to Vision Transformer (ViT) for better global attention
